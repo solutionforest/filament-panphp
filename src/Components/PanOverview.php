@@ -9,19 +9,16 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Checkbox;
 use Filament\Widgets\TableWidget as BaseWidget;
-use Illuminate\Database\Eloquent\Model;
 use Filament\Tables\Actions\Action;
 use Pan\PanConfiguration;
+use SolutionForest\FilamentPanphp\Models\PanAnalytics;
 
 class PanOverview extends BaseWidget
 {
     public function table(Table $table): Table
     {
-        $PanAnalytics = new class extends Model {
-            protected $table = 'pan_analytics';
-        };
         $currentPanConfiguration = PanConfiguration::instance()->toArray();
-        return $table->query(fn() => $PanAnalytics::query())
+        return $table->query(fn() => PanAnalytics::query())
             ->columns([
                 TextColumn::make('name')->searchable(),
                 TextColumn::make('impressions')->sortable(),
