@@ -9,8 +9,9 @@ use Illuminate\Support\Facades\Validator;
 class PanAnalytics extends Model
 {
     use HasFactory;
-    
+
     protected $table = 'pan_analytics';
+
     protected $fillable = [
         'name',
         'impressions',
@@ -19,6 +20,7 @@ class PanAnalytics extends Model
     ];
 
     public $timestamps = false;
+
     public $rules = [
         'name' => 'required|unique:pan_analytics|max:255',
     ];
