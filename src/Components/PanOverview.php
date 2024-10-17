@@ -47,9 +47,11 @@ class PanOverview extends BaseWidget
             ])
             ->headerActions([
                 CreateAction::make()
+                    ->size('sm')
                     ->hiddenLabel()
                     ->icon('heroicon-o-plus-circle')
                     ->model(PanAnalytics::class)
+                    ->modalWidth('xl')
                     ->form([
                         TextInput::make('name')
                             ->required()
@@ -57,6 +59,8 @@ class PanOverview extends BaseWidget
                             ->maxLength(255),
                     ]),
                 Action::make('Config')
+                    ->size('sm')
+                    ->modalWidth('xl')
                     ->hiddenLabel()
                     ->icon('heroicon-o-adjustments-horizontal')
                     ->form([
