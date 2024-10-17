@@ -1,18 +1,3 @@
-<p align="center"><a href="https://solutionforest.com" target="_blank"><img src="https://github.com/solutionforest/.github/blob/main/docs/images/sf.png?raw=true" width="200"></a></p>
-
-
-## About Solution Forest
-
-[Solution Forest](https://solutionforest.com) Web development agency based in Hong Kong. We help customers to solve their problems. We Love Open Soruces. 
-
-We have built a collection of best-in-class products:
-
-- [VantagoAds](https://vantagoads.com): A self manage Ads Server, Simplify Your Advertising Strategy.
-- [GatherPro.events](https://gatherpro.events): A Event Photos management tools, Streamline Your Event Photos.
-- [Website CMS Management](https://filamentphp.com/plugins/solution-forest-cms-website): Website CMS Management
-
-
-
 # Filament UI for Pan Analytics
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/solution-forest/filament-panphp.svg?style=flat-square)](https://packagist.org/packages/solution-forest/filament-panphp)
@@ -98,3 +83,17 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+<p align="center"><a href="https://solutionforest.com" target="_blank"><img src="https://github.com/solutionforest/.github/blob/main/docs/images/sf.png?raw=true" width="200"></a></p>
+
+## About Solution Forest
+
+[Solution Forest](https://solutionforest.com) Web development agency based in Hong Kong. We help customers to solve their problems. We Love Open Soruces. 
+
+We have built a collection of best-in-class products:
+
+- [VantagoAds](https://vantagoads.com): A self manage Ads Server, Simplify Your Advertising Strategy.
+- [GatherPro.events](https://gatherpro.events): A Event Photos management tools, Streamline Your Event Photos.
+- [Website CMS Management](https://filamentphp.com/plugins/solution-forest-cms-website): Website CMS Management
+
+
