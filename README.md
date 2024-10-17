@@ -11,7 +11,6 @@ Seamlessly integrate [pan, the lightweight and privacy-focused PHP product analy
 
 <img width="636" alt="image" src="https://github.com/user-attachments/assets/a6599da8-49a8-4794-ae09-1be7a05229a7">
 
-
 Key Features:
 - Easy-to-use Filament components for visualizing Pan analytics data
 - Intuitive interface for managing and configuring tracked elements
@@ -36,6 +35,9 @@ composer require solution-forest/filament-panphp
 
 ## Usage
 
+### 1. Using in Filament Dashboard
+
+<img width="636" alt="image" src="https://github.com/user-attachments/assets/a6599da8-49a8-4794-ae09-1be7a05229a7">
 
 ```php
 
@@ -52,11 +54,24 @@ public function panel(Panel $panel): Panel
 ```
 
 
+### 2. You can use the [Widget in the blade](https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view)
+
+<img width="1585" alt="image" src="https://github.com/user-attachments/assets/a4e1ed7d-752d-4440-831e-dd39eec9d0c2">
+
+
+```php
+<div>
+    @livewire(SolutionForest\FilamentPanphp\Components\PanOverview::class)
+</div>
+```
+
+
 ## Screenshot
 
 <img width="636" alt="image" src="https://github.com/user-attachments/assets/a6599da8-49a8-4794-ae09-1be7a05229a7">
 <img width="927" alt="image" src="https://github.com/user-attachments/assets/5554edd2-9caa-46d0-be67-60f5179ec472">
 <img width="920" alt="image" src="https://github.com/user-attachments/assets/4870684b-5e62-4834-a4db-89fecf75d199">
+<img width="1585" alt="image" src="https://github.com/user-attachments/assets/a4e1ed7d-752d-4440-831e-dd39eec9d0c2">
 
 
 ## Testing
