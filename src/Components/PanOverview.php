@@ -10,6 +10,9 @@ use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Checkbox;
 use Filament\Widgets\TableWidget as BaseWidget;
 use Filament\Tables\Actions\Action;
+use Filament\Tables\Actions\CreateAction;
+use Filament\Tables\Actions\DeleteAction;
+use Filament\Tables\Actions\ForceDeleteAction;
 use Pan\PanConfiguration;
 use SolutionForest\FilamentPanphp\Models\PanAnalytics;
 
@@ -25,8 +28,23 @@ class PanOverview extends BaseWidget
                 TextColumn::make('hovers')->sortable(),
                 TextColumn::make('clicks')->sortable()
             ])
+            ->actions([
+                DeleteAction::make()
+            ])
             ->headerActions([
+                CreateAction::make()
+                ->disableLabel()
+                ->icon('heroicon-o-plus-circle')
+                ->model(PanAnalytics::class)
+                ->form([
+                    TextInput::make('name')
+                        ->required()
+                        ->unique('pan_analytics', 'name')
+                        ->maxLength(255),
+                ]),
                 Action::make('Config')
+                ->disableLabel()
+                ->icon('heroicon-o-adjustments-horizontal')
                 ->form([
                     Checkbox::make('unlimitedAnalytics')
                         ->inline()
@@ -42,7 +60,9 @@ class PanOverview extends BaseWidget
                         ->label('Allowed Analytics')
                         ->separator(',')
                         ->default($currentPanConfiguration['allowed_analytics'])
-                ])->modalCancelAction(false)->modalSubmitAction(false)
+                ])
+                ->modalCancelAction(false)
+                ->modalSubmitAction(false)
                 // ->action(function (array $data): void {
                 //     $unlimitedAnalytics = $data['unlimitedAnalytics'] ?? false;
                 //     $maxAnalytics = $data['maxAnalytics'] ?? 50;
