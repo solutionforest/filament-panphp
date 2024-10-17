@@ -34,8 +34,8 @@ class FilamentPanphpServiceProvider extends PackageServiceProvider
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->publishConfigFile()
-                    ->publishMigrations()
-                    ->askToRunMigrations()
+                    // ->publishMigrations()
+                    // ->askToRunMigrations()
                     ->askToStarRepoOnGitHub('solution-forest/filament-panphp');
             });
 
@@ -45,17 +45,17 @@ class FilamentPanphpServiceProvider extends PackageServiceProvider
             $package->hasConfigFile();
         }
 
-        if (file_exists($package->basePath('/../database/migrations'))) {
-            $package->hasMigrations($this->getMigrations());
-        }
+        // if (file_exists($package->basePath('/../database/migrations'))) {
+        //     $package->hasMigrations($this->getMigrations());
+        // }
 
-        if (file_exists($package->basePath('/../resources/lang'))) {
-            $package->hasTranslations();
-        }
+        // if (file_exists($package->basePath('/../resources/lang'))) {
+        //     $package->hasTranslations();
+        // }
 
-        if (file_exists($package->basePath('/../resources/views'))) {
-            $package->hasViews(static::$viewNamespace);
-        }
+        // if (file_exists($package->basePath('/../resources/views'))) {
+        //     $package->hasViews(static::$viewNamespace);
+        // }
     }
 
     public function packageRegistered(): void {}
@@ -63,27 +63,27 @@ class FilamentPanphpServiceProvider extends PackageServiceProvider
     public function packageBooted(): void
     {
         // Asset Registration
-        FilamentAsset::register(
-            $this->getAssets(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::register(
+        //     $this->getAssets(),
+        //     $this->getAssetPackageName()
+        // );
 
-        FilamentAsset::registerScriptData(
-            $this->getScriptData(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::registerScriptData(
+        //     $this->getScriptData(),
+        //     $this->getAssetPackageName()
+        // );
 
         // Icon Registration
-        FilamentIcon::register($this->getIcons());
+        // FilamentIcon::register($this->getIcons());
 
         // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-panphp/{$file->getFilename()}"),
-                ], 'filament-panphp-stubs');
-            }
-        }
+        // if (app()->runningInConsole()) {
+        //     foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+        //         $this->publishes([
+        //             $file->getRealPath() => base_path("stubs/filament-panphp/{$file->getFilename()}"),
+        //         ], 'filament-panphp-stubs');
+        //     }
+        // }
 
         // Testing
         Testable::mixin(new TestsFilamentPanphp);
