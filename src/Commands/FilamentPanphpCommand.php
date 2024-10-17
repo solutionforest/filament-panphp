@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace SolutionForest\FilamentPanphp\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentPanphpCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-panphp';
 
     public $description = 'My command';
 
