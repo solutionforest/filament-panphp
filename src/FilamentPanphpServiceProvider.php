@@ -36,7 +36,7 @@ class FilamentPanphpServiceProvider extends PackageServiceProvider
                     ->publishConfigFile()
                     // ->publishMigrations()
                     // ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('solution-forest/filament-panphp');
+                    ->askToStarRepoOnGitHub('solutionforest/filament-panphp');
             });
 
         $configFileName = $package->shortName();

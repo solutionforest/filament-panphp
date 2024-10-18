@@ -1,8 +1,8 @@
 # Filament UI for Pan Analytics
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/solution-forest/filament-panphp.svg?style=flat-square)](https://packagist.org/packages/solution-forest/filament-panphp)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/solution-forest/filament-panphp/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/solution-forest/filament-panphp/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/solution-forest/filament-panphp/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/solution-forest/filament-panphp/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/solutionforest/filament-panphp/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/solutionforest/filament-panphp/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/solutionforest/filament-panphp/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/solutionforest/filament-panphp/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/solution-forest/filament-panphp.svg?style=flat-square)](https://packagist.org/packages/solution-forest/filament-panphp)
 
 
