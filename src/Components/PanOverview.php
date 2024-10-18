@@ -26,7 +26,9 @@ class PanOverview extends BaseWidget
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('name')->searchable(),
-                TextColumn::make('impressions')->sortable(),
+                TextColumn::make('impressions')
+                    ->sortable()
+                    ->formatStateUsing(fn ($state) => number_format($state, 0, '.', ',')),
                 TextColumn::make('hovers')
                     ->formatStateUsing(
                         fn (mixed $state, ?PanAnalytics $record) => number_format($state) . ' (' . number_format($record->hover_percentage, 1) . '%)'
