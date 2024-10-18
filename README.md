@@ -9,7 +9,7 @@
 Seamlessly integrate [pan, the lightweight and privacy-focused PHP product analytics library](https://github.com/panphp/pan), into your Filament admin panel with this powerful UI package.
 
 
-<img width="646" alt="image" src="https://github.com/user-attachments/assets/2aa78fb3-0f8c-45fa-85c2-e4e85308b296">
+<img width="646" alt="image" src="https://repository-images.githubusercontent.com/874164775/1d0951e2-4ae8-4d22-9459-8cf381adcaa2">
 
 Key Features:
 - Easy-to-use Filament components for visualizing Pan analytics data
