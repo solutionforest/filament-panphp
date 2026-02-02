@@ -22,9 +22,16 @@ With our Filament UI for Pan, you can:
 - Easily manage allowed analytics and configure tracking limits
 - Visualize trends and patterns in user interactions
 
+## Version Compatibility
+
+| Package Version | Filament Version | PHP Version |
+|-----------------|------------------|-------------|
+| 1.x             | 3.x              | 8.3+        |
+| 2.x             | 4.x / 5.x        | 8.2+        |
+
 ## Installation
 
-> **Requires [PHP 8.3+](https://php.net/releases/), and [Laravel 11.0+](https://laravel.com)**.
+> **Requires [PHP 8.2+](https://php.net/releases/), [Laravel 11.0+](https://laravel.com), and [Filament v4 or v5](https://filamentphp.com)**.
 
 You can install the package via composer:
 
@@ -55,7 +62,7 @@ public function panel(Panel $panel): Panel
 ```
 
 
-### 2. You can use the [Widget in the blade](https://filamentphp.com/docs/3.x/widgets/adding-a-widget-to-a-blade-view)
+### 2. You can use the [Widget in the blade](https://filamentphp.com/docs/4.x/widgets/adding-a-widget-to-a-blade-view)
 
 <img width="1024" alt="image" src="https://github.com/user-attachments/assets/1986acb0-bf6e-4dd6-87bd-c490734c1b24">
 
